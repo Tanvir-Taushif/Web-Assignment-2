@@ -59,7 +59,7 @@ nav a{
 
 .top-section{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 .top-section h1{
@@ -149,7 +149,35 @@ nav a{
     color: #E02C6D;
 }
 
+/* <!-- --------------------
+            Traveling Agent
+         ------------------------- --> */
 
+    .travel{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .travel h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .travel span{
+        color: #E02C6D;
+    }
+
+    .travel-image{
+        border-radius: 5px;
+        height: 220px;
+        width: 320px;
+        box-shadow: 10px 10px 30px gray;
+        padding: 10px;
+    }
+
+    .travel div{
+        margin: 20px;
+    }
 
 /* ---------------------
         Footer
@@ -209,6 +237,9 @@ footer{
     .items{
         grid-template-columns: repeat(1,1fr);
     }
+    .travel{
+        flex-direction: column;
+    }
    }
 
     /* Tablet Devices */
@@ -222,6 +253,9 @@ footer{
         #next-page{
             margin-left: 40%;
         }
+        .travel{
+            flex-direction: column;
+        }
     }
 
 
@@ -233,5 +267,5 @@ footer{
    }
 
    .item:hover{
-       transform: scale(1.1);
+       transform: scale(1.05);
    }
