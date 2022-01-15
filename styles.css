@@ -72,12 +72,70 @@ nav a{
 }
 
 #top-section-image{
-    border: 2px solid rgb(236, 236, 236);
-    border-radius: 50%;
+    background-image: url(images/Circle\ design.svg);
+    background-size: 422px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* ---------------------
         Catalogue
    --------------------- */
 
+.catalogue{
+    align-items: center;
+}
+.catalogue h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 37%;
+}
 
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.item{
+    Width: 329px;
+    Height:476px;
+    box-shadow: 10px 10px 30px gray;
+    border-radius:5px;
+}
+
+.item article{
+    padding:15px;
+}
+
+.item article>h3{
+    margin: 0px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+
+.item img{
+    width: 300px;
+    height: 256px;
+}
+
+.price{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #18191F;
+}
+
+.star{
+    color: #FB8200;
+    size: 16px;
+}
+.item-description{
+    margin-top: 5px;
+    size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
